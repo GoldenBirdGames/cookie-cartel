@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img">
+  <defs><filter id="crateShadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="11"/></filter></defs>
+  <ellipse cx="206" cy="332" rx="146" ry="22" fill="#000" opacity=".5" filter="url(#crateShadow)"/>
+  <g>
+    <ellipse cx="126" cy="162" rx="58" ry="18" fill="#452716"/>
+    <ellipse cx="126" cy="148" rx="58" ry="18" fill="#7C5330"/>
+    <circle cx="104" cy="142" r="7" fill="#26140A"/><circle cx="146" cy="152" r="6" fill="#26140A"/>
+    <circle cx="126" cy="160" r="5" fill="#26140A"/>
+    <ellipse cx="256" cy="158" rx="54" ry="17" fill="#8E5A21"/>
+    <ellipse cx="256" cy="144" rx="54" ry="17" fill="#D19A4E"/>
+    <circle cx="236" cy="138" r="6.4" fill="#3E2415"/><circle cx="272" cy="148" r="5.4" fill="#3E2415"/>
+  </g>
+  <path d="M 58 176 H 342 V 308 H 58 Z" fill="#432D18"/>
+  <path d="M 58 176 H 342 V 198 H 58 Z" fill="#5C3F21"/>
+  <path d="M 58 176 L 342 308 M 342 176 L 58 308" stroke="#2E1E0F" stroke-width="8" opacity=".4"/>
+  <path d="M 58 222 H 342 V 234 H 58 Z" fill="#2E1E0F" opacity=".6"/>
+  <path d="M 58 272 H 342 V 284 H 58 Z" fill="#2E1E0F" opacity=".6"/>
+  <rect x="124" y="228" width="152" height="52" rx="4" fill="#F2B705"/>
+  <text x="200" y="252" text-anchor="middle" font-family="Impact, Haettenschweiler, 'Arial Narrow', 'DejaVu Sans Condensed', sans-serif" font-size="22" fill="#0B0906" letter-spacing="1">EL JEFE</text>
+  <text x="200" y="270" text-anchor="middle" font-family="'DejaVu Sans Condensed', 'Arial Narrow', Verdana, sans-serif" font-size="9" fill="#0B0906" letter-spacing="1.5">FOUNDER'S BUNDLE</text>
+</svg>

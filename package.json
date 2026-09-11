@@ -1,0 +1,16 @@
+{
+  "name": "cookie-cartel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A tribute rebuild of cookiecartel.in — a dark, gold-leafed storefront for criminally good NY-style stuffed cookies.",
+  "type": "module",
+  "scripts": {
+    "art": "node tools/make-art.mjs && node tools/make-brand.mjs",
+    "build": "npm run art && node tools/build.mjs",
+    "dev": "python3 -m http.server 8080",
+    "qa": "node tools/qa.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.1"
+  }
+}
