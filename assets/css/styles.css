@@ -1458,3 +1458,10 @@ body.locked { overflow: hidden; }
   color: #7A705F;
   margin-top: .5rem;
 }
+
+/* marks the concept build's stand-in contact details */
+.ph-note {
+  margin-top: .9rem !important;
+  font-size: .76rem !important;
+  color: #7A705F !important;
+}

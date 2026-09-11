@@ -157,7 +157,7 @@ window.CARTEL = {
     { q: 'Is there a discount on bigger orders?',
       a: 'Yes — buy any 7 or more items and 15% comes off automatically at checkout. No code, no negotiation, no questions.' },
     { q: 'Can I cancel or return an order?',
-      a: 'Because everything is baked fresh on order we cannot offer refunds, unless your order arrives damaged, incomplete or incorrect. Mail the order number to kingpin@cookiecartel.in and we will sort it out.' },
+      a: 'Because everything is baked fresh on order we cannot offer refunds, unless your order arrives damaged, incomplete or incorrect. Mail the order number to kingpin@cookiecartel.example and we will sort it out.' },
     { q: 'Who is behind all this?',
       a: 'Hisham Sunesra — El Jefe — who started baking during lockdown in Panchgani chasing the New York stuffed cookie he grew up on. The operation now runs out of a bakery in Kandivali West, Mumbai.' },
   ],

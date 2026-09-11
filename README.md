@@ -73,7 +73,9 @@ waits on a third party and the site works offline.
 ## Content
 
 Product names, weights, prices, delivery rules, the founder's story and the Shark Tank India
-figures are drawn from Cookie Cartel's own public pages and press coverage. Reviews are
+figures are drawn from Cookie Cartel's own public pages and press coverage. Contact details are
+deliberately **not** the brand's: the site shows a reserved `.example` address and a masked phone
+number so nothing here can reach a real business. Reviews are
 representative rather than transcribed, apart from the first, which is quoted from the brand's
 reviews page.
 
