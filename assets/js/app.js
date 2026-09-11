@@ -249,7 +249,12 @@
   function drawer() {
     const panel = $('.drawer'), scrim = $('.scrim');
     const openCart  = () => { panel?.classList.add('on'); scrim?.classList.add('on'); };
-    const closeCart = () => { panel?.classList.remove('on'); scrim?.classList.remove('on'); $('.nav')?.classList.remove('on'); };
+    const closeCart = () => {
+      panel?.classList.remove('on');
+      scrim?.classList.remove('on');
+      $('.nav')?.classList.remove('on');
+      document.body.classList.remove('nav-open');
+    };
 
     $('.cart-btn')?.addEventListener('click', openCart);
     $('[data-close-cart]')?.addEventListener('click', closeCart);
@@ -478,15 +483,18 @@
   /* ======================= 11. odds and ends ============================= */
   function nav() {
     const menu = $('.nav'), burger = $('.burger'), scrim = $('.scrim');
-    burger?.addEventListener('click', () => {
-      const open = menu.classList.toggle('on');
+    const setNav = (open) => {
+      menu?.classList.toggle('on', open);
       scrim?.classList.toggle('on', open);
-      burger.setAttribute('aria-expanded', String(open));
-    });
-    $$('.nav a').forEach((a) => a.addEventListener('click', () => {
-      menu?.classList.remove('on');
-      scrim?.classList.remove('on');
-    }));
+      document.body.classList.toggle('nav-open', open);
+      burger?.setAttribute('aria-expanded', String(open));
+    };
+
+    burger?.addEventListener('click', () => setNav(!menu.classList.contains('on')));
+    $$('.nav a').forEach((a) => a.addEventListener('click', () => setNav(false)));
+    $('[data-close-nav]')?.addEventListener('click', () => setNav(false));
+    scrim?.addEventListener('click', () => setNav(false));
+    addEventListener('keydown', (e) => e.key === 'Escape' && setNav(false));
   }
 
   function newsletter() {
