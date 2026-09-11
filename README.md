@@ -79,3 +79,7 @@ reviews page.
 
 This is an independent tribute build for demonstration purposes — not the official store, and
 not affiliated with Cookie Cartel. Checkout is inert; nothing is charged.
+
+That provenance is stated in three places so it survives being shared: a ribbon above the header
+on every page, a line on the loading screen, and an "About this build" block in the footer that
+links back to the real store. Keep all three if you publish this anywhere public.
