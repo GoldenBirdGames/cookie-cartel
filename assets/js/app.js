@@ -347,13 +347,18 @@
       grid.innerHTML = items.map(cardHTML).join('');
       tilt();
     };
+
+    // links can arrive pre-filtered, e.g. shop.html?c=merch
+    const wanted = new URLSearchParams(location.search).get('c');
+    const preset = DATA.filters.some((f) => f.id === wanted) ? wanted : null;
+    if (preset && preset !== 'all') list = DATA.products.filter((p) => p.cats.includes(preset));
     render(list);
 
     // filter chips
     const bar = $('#filters');
     if (bar) {
       bar.innerHTML = DATA.filters.map((f, i) =>
-        `<button class="chip" data-filter="${f.id}" aria-pressed="${i === 0}">${f.label}</button>`).join('');
+        `<button class="chip" data-filter="${f.id}" aria-pressed="${preset ? f.id === preset : i === 0}">${f.label}</button>`).join('');
 
       bar.addEventListener('click', (e) => {
         const chip = e.target.closest('[data-filter]');
